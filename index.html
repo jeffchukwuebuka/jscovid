@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+    <link rel="sylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="sylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stlye.css">
+    <title>Covid-19</title>
+
+</head>
+<h3 class="text-center mb-4">Covid-19 Statistics</h3>
+        <div class="global-container">
+            <div class="new-confirmed">
+                <p class="new-confirmed-title">New Confirmed</p> 
+                <h3 class="new-confirmed-stats"></h3>
+            </div>
+            <div class="total-confirmed">
+                <p class="total-confirmed-title">Total Confirmed</p> 
+                <h3 class="total-confirmed-stats"></h3>
+            </div>
+            <div class="new-deaths">
+                <p class="new-deaths-title">New Deaths</p> 
+                <h3 class="new-deaths-stats"></h3>
+            </div>
+            <div class="total-deaths">
+                <p class="total-deaths-title">Total Deaths</p> 
+                <h3 class="total-deaths-stats"></h3>
+            </div>
+            <div class="new-recovered">
+                <p class="new-recovered-title">New Recovered</p>
+                <h3 class="new-recovered-stats"></h3>
+            </div>
+            <div class="total-recovered">
+                <p class="total-recovered-title">Total Recovered</p>
+                <h3 class="total-recovered-stats"></h3>
+            </div>
+        </div>
+        <table id="example" class="display table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Country Code</th>
+                    <th>Slug</th>
+                    <th>New Confirmed</th>
+                    <th>Total Confirmed</th>
+                    <th>New Deaths</th>
+                    <th>Total Deaths</th>
+                    <th>New Recovered</th>
+                    <th>Total Recovered</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+
+    <script src="script.js"></script>
+</body>
+</html>
